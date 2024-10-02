@@ -8,20 +8,22 @@ export default function Header({ logoText, menuItems, showMenuItems }) {
       <li className="flex justify-around w-3/5 mx-auto pt-3">
         <img className="mask mask-hexagon-2" width={50} src='/images/polar_bear.png'></img>
         <div className='w-2/5'>
-          <p className="text-xl pt-2">Coleman Manchester</p>
-        </div>
+          <Link href="/">
+            <button className="btn btn-ghost text-xl">Coleman Manchester</button>
+          </Link>       
+         </div>
         
-        <Link href="/">
-          <button className="btn btn-ghost">Home</button>
-        </Link>
         <Link href="/about">
           <button className="btn btn-ghost">About</button>
         </Link>
-        <Link href="/blog">
-          <button className="btn btn-ghost">Blog</button>
+        <Link href="/notes">
+          <button className="btn btn-ghost">Notes</button>
         </Link>
-        <Link href="/contact">
-            <button className="btn btn-ghost">Contact</button>
+        <Link href="/articles">
+            <button className="btn btn-ghost">Articles</button>
+        </Link>
+        <Link href="/projects">
+            <button className="btn btn-ghost">Projects</button>
         </Link>
       </li>
       <Divider></Divider>
