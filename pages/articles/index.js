@@ -1,8 +1,12 @@
 import Layout from "../../components/Layout";
+import Test from "./test.md"
 
 export default function Index() {
     return (
-        <Layout title={"Come back later, nerd!"}>
+        <Layout>
+            <article className="prose prose-h2:text-5xl">
+                <Test/>
+            </article>
         </Layout>
     )
 }
