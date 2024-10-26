@@ -16,9 +16,6 @@ export default function Header({ logoText, menuItems, showMenuItems }) {
         <Link href="/about">
           <button className="btn btn-ghost">About</button>
         </Link>
-        <Link href="/notes">
-          <button className="btn btn-ghost">Notes</button>
-        </Link>
         <Link href="/articles">
             <button className="btn btn-ghost">Articles</button>
         </Link>
